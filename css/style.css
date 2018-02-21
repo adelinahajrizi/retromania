@@ -1,0 +1,746 @@
+@charset "utf-8";
+/*
+Theme Name: Retromania
+Theme URI: http://www.jayhafling.com/wordpress-themes/
+Version: 1.0
+Author: Jay Hafling
+Author URI: http://www.jayhafling.com/
+*/
+
+
+html
+{
+	font-size:100.01%;
+}
+html, body
+{
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+*
+{
+	padding:0;
+	margin:0;
+}
+
+body
+{
+	font: 12px/1.4 Arial, Helvetica, sans-serif;
+	color:#232323;
+	background:#00303A;
+}
+
+/***** Headings *****/
+
+h1, h2, h3, h4, h5, h6
+{
+	margin:0;
+	padding:0;
+	font-weight:normal;
+}
+
+h1
+{
+	padding:0px 0 10px 0;
+	font-size:24px;
+	color:#ac1616;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+h2
+{
+	padding:0px 0 20px 0;
+	font-size:24px;
+}
+
+h3
+{
+	font-size:16px;
+	font-weight:normal;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-transform:uppercase;
+	color:#ac1616;
+	padding:0px 0 20px 0;
+}
+
+/***** Common Formatting *****/
+
+p, ul, ol
+{
+	margin:0;
+	padding:0 0 20px 0;
+}
+
+ul, ol
+{
+	padding:0 0 20px 2.5em;
+}
+
+blockquote
+{
+	margin:20px;
+	padding:20px 1.25em 0 1.25em;
+}
+
+small
+{
+	font-size:0.85em;
+}
+
+img
+{
+	 border:0;
+}
+
+sup
+{
+	position:relative;
+	bottom:0.3em;
+	vertical-align:baseline;
+}
+
+sub
+{
+	position:relative;
+	bottom:-0.2em;
+	vertical-align:baseline;
+}
+
+acronym, abbr
+{
+	cursor:help;
+	letter-spacing:1px;
+	border-bottom:1px dashed;
+}
+
+/***** Links *****/
+
+a,
+a:link,
+a:visited,
+a:hover
+{
+	text-decoration:none;
+}
+
+.error-1, .error-2, .error-3, .error-4, .error-5, .error-6 {
+	color: #ff0000;
+	font-weight: 400;
+}
+
+a:link
+{
+	color:#ac1616;
+}
+a:visited
+{
+	color:#ac1616;
+}
+a:hover
+{
+	color:#73794f;
+}
+a:active
+{
+	color:#ff4200;
+}
+
+/***** Forms *****/
+
+form
+{
+	margin:0;
+	padding:0;
+	display:inline;
+}
+
+input, select, textarea
+{
+	font:1em Arial, Helvetica, sans-serif;
+}
+
+textarea
+{
+	width:100%;
+	line-height:1.25;
+}
+
+label
+{
+	cursor:pointer;
+}
+
+/***** Tables *****/
+
+table
+{
+	border:0;
+	margin:0 0 1.25em 0;
+	padding:0;
+}
+
+table tr td
+{
+	padding:2px;
+}
+
+/***** Wrapper *****/
+
+.wrap
+{
+	width:1000px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+
+/***** Global Classes *****/
+
+.clear         { clear:both; overflow:hidden; width:1px; height:1px;}
+.float-left    { float:left; }
+.float-right   { float:right; }
+
+.text-left     { text-align:left; }
+.text-right    { text-align:right; }
+.text-center   { text-align:center; }
+.text-justify  { text-align:justify; }
+
+.bold          { font-weight:bold; }
+.italic        { font-style:italic; }
+.underline     { border-bottom:1px solid; }
+.highlight     { background:#ffc; }
+
+.img-left      { float:left;margin:4px 10px 4px 0; }
+.img-right     { float:right;margin:4px 0 4px 10px; }
+
+.nopadding     { padding:0; }
+.noindent      { margin-left:0; padding-left:0; }
+.nobullet      { list-style:none; list-style-image:none; }
+
+.width100 { width: 100%; }
+.width75 { width: 75%; }
+.width50 { width: 50%; }
+
+
+/**************  Classes  **************/
+/*++++++++++++++  Header  +++++++++++++++*/
+
+.header
+{
+	width:1000px;
+	height:240px;
+	overflow:hidden;
+	position:relative;
+	background:url(../images/header.jpg) top left no-repeat;
+}
+
+h1.logo
+{
+	margin:0;
+	padding:0;
+	font:bold 34px/34px "Trebuchet MS", Helvetica, sans-serif;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	color:#ad1616;
+	position:absolute;
+	left:57px;
+	top:11px;
+}
+h1.logo a, h1.logo a:visited
+{
+	color:#ad1616;
+	text-decoration:none;
+}
+.description
+{
+	margin:0;
+	padding:0;
+	font:bold 11px/11px "Trebuchet MS", Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#000;
+	position:absolute;
+	left:57px;
+	top:44px;
+}
+
+.table-container {
+	margin: 0 0 0 15px!important;
+}
+
+.subscribe_rss
+{
+	margin:0;
+	padding:0;
+	font:bold 14px/14px Georgia, "Times New Roman", Times, serif;
+	text-transform:uppercase;
+	position:absolute;
+	top:15px;
+	right:200px;
+}
+.subscribe_rss a, .subscribe_rss a:visited
+{
+	color:#3e3f42;
+	text-decoration:none;
+}
+.subscribe_email
+{
+	margin:0;
+	padding:0;
+	font:bold 14px/14px Georgia, "Times New Roman", Times, serif;
+	text-transform:uppercase;
+	position:absolute;
+	top:15px;
+	right:30px;
+}
+.subscribe_email a, .subscribe_email a:visited
+{
+	color:#3e3f42;
+	text-decoration:none;
+}
+.subscribe_email a:hover, .subscribe_rss a:hover
+{
+	color:#ad1616;
+}
+
+ul.menu
+{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	position:absolute;
+	top:201px;
+	left:55px;
+}
+ul.menu li, ul.menu li ul, ul.menu li ul li
+{
+	display:block;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	height:11px;
+	overflow:hidden;
+}
+
+ul.menu li ul li
+{
+	float:left;
+	font:bold 11px/11px Georgia, "Times New Roman", Times, serif;
+	text-transform:uppercase;
+	color:#000;
+	margin:0 21px 0 0;
+	padding:0;
+}
+ul.menu li ul li a, ul.menu li ul li a:visited
+{
+	color:#000;
+}
+ul.menu li ul li a:hover
+{
+	color:#ad1616;
+}
+
+/* Content */
+.content
+{
+	width:100%;
+	overflow:hidden;
+	background:url(../images/content_body.jpg) top left repeat;
+}
+.content_left
+{
+	width:100%;
+	overflow:hidden;
+	background:url(../images/sharp_left.gif) top left repeat-y;
+}
+.content_right
+{
+	width:100%;
+	overflow:hidden;
+	background:url(../images/sharp_right.gif) top right repeat-y;
+
+}
+
+/* Mainbar */
+.mainbar
+{
+	float:left;
+	width:669px;
+	overflow:hidden;
+	background:url(../images/mainbar_body.jpg) top left repeat;
+	display:inline;
+	margin:13px 0 20px 22px;
+}
+.mainbar_top
+{
+	width:669px;
+	overflow:hidden;
+	background:url(../images/mainbar_top.jpg) top left no-repeat;
+}
+.mainbar_bottom
+{
+	width:669px;
+	overflow:hidden;
+	background:url(../images/mainbar_bottom.jpg) bottom left no-repeat;
+	padding:40px 0;
+}
+.mainbar_inner
+{
+	width:560px;
+	margin:0 0 0 70px;
+}
+
+.post
+{
+	width:100%;
+	margin:0 0 40px;
+	position:relative;
+}
+.post h2.post_header
+{
+	font:normal 24px/24px Georgia, "Times New Roman", Times, serif;
+	color:#222;
+	margin:0 0 7px;
+	padding:0;
+}
+.post h2.post_header a, .post h2.post_header a:visited
+{
+	color:#222;
+}
+.post h2.post_header a:hover
+{
+	color:#ad1616;
+}
+.post_line
+{
+	width:100%;
+	height:7px;
+	background:url(../images/post_line.jpg) top left no-repeat;
+	margin:0 0 12px;
+}
+.post_content
+{
+	background:url(../images/mainbar_lines.gif) top left repeat;
+	line-height:20px;
+}
+.post_data
+{
+	width:540px;
+	background:#d7d0b9;
+	padding:4px 10px;
+	font:normal 12px/12px Georgia, "Times New Roman", Times, serif;
+	color:#000;
+	margin:20px 0 0 0;
+}
+.post_data a, .post_data a:visited
+{
+	color:#605b18;
+	text-decoration:underline;
+}
+.post_data a:hover
+{
+	color:#ad1616;
+	text-decoration:none;
+}
+.post_date
+{
+	width:46px;
+	height:46px;
+	background:url(../images/mainbar_date.gif) top left no-repeat;
+	position:absolute;
+	left:-61px;
+	top:0;
+	color:#fff;
+}
+.post_date_top
+{
+	margin:0px 0 0 0;
+	font:bold 24px/24px Georgia, "Times New Roman", Times, serif;
+	text-align:center;
+}
+.post_date_bottom
+{
+	margin:0px 0 0 0;
+	font:bold 12px/12px Georgia, "Times New Roman", Times, serif;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+/* Comments */
+.comments
+{
+	margin:0px 0 30px 0;
+}
+.comment
+{
+	margin:0px 0 10px 0;
+}
+.comment p
+{
+	width:540px;
+	margin:0px 10px 0px 10px;
+}
+
+.comment_data
+{
+	width:540px;
+	background:#d7d0b9;
+	padding:6px 10px;
+	font:normal 12px/12px Georgia, "Times New Roman", Times, serif;
+	color:#000;
+	margin:0px 0 10px 0;
+}
+.comment_data a, .comment_data a:visited
+{
+	color:#605b18;
+	text-decoration:underline;
+	font:normal 16px/12px Georgia, "Times New Roman", Times, serif;
+}
+.comment_data a:hover
+{
+	color:#ad1616;
+	text-decoration:none;
+}
+
+
+
+
+.comments form
+{
+	display:block;
+	width:433px;
+	overflow:hidden;
+	font:normal 12px/12px "Trebuchet MS", Helvetica, sans-serif
+
+}
+.comments form .form_string
+{
+	width:100%;
+	overflow:hidden;
+	margin:0 0 4px 0;
+}
+.comments form .form_string .form_name
+{
+	float:left;
+	width:60px;
+	overflow:hidden;
+	font-size:12px;
+}
+.comments form .form_string .form_input
+{
+	float:left;
+	width:350px;
+	overflow:hidden;
+}
+
+.comments form .form_string .form_input input
+{
+	width:200px;
+	height:18px;
+	background:#e4ddc6;
+	border:1px solid #8d8c87;
+	vertical-align:middle;
+	font:normal 12px/100% "Trebuchet MS", Helvetica, sans-serif;
+	padding:1px 0 0 5px;
+}
+
+.comments form .form_string .form_input textarea
+{
+	width:340px;
+	height:100px;
+	background:#e4ddc6;
+	border:1px solid #8d8c87;
+	vertical-align:middle;
+	font:normal 12px/100% "Trebuchet MS", Helvetica, sans-serif;
+	padding:1px 0 0 5px;
+}
+
+.comments form .form_string .form_input input.submit
+{
+	width:84px;
+	height:21px;
+	background:#667b8f;
+	border:1px solid #667b8f;
+	margin:0 0 0 0px;
+	padding:0;
+	font:bold 12px/100% "Trebuchet MS", Helvetica, sans-serif;
+	color:#fff;
+	text-transform:uppercase;
+	cursor:pointer;
+}
+
+.sidebar
+{
+	float:left;
+	width:270px;
+	overflow:hidden;
+	margin:22px 0 0 10px;
+}
+.sidebar ul, .sidebar ul li, .sidebar ul li ul, .sidebar ul li ul li
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:0;
+	background:none;
+	overflow:hidden;
+}
+.sidebar ul li, .sidebar ul, .sidebar ul li ul
+{
+	display:block;
+}
+.sidebar ul li
+{
+	width:268px;
+	border:1px dashed #99936f;
+	background:url(../images/sidebar_body.gif) top left repeat;
+	margin:0 0 10px 0;
+	overflow:hidden;
+}
+.sidebar ul li h2
+{
+	width:268px;
+	height:33px;
+	background:url(../images/sidebar_h2.gif) top left repeat-x;
+	margin:11px 0 20px 0;
+	color:#c7d1db;
+	text-transform:uppercase;
+	font: bold 24px/33px "Trebuchet MS", Helvetica, sans-serif;
+	padding:0 0 0 18px;
+}
+.sidebar ul li ul
+{
+	width:232px;
+	margin:0 0 18px 0;
+}
+.sidebar ul li ul li
+{
+	margin:0 0 10px 18px;
+	padding: 0 0 0 13px;
+	background:url(../images/bullet.gif) left no-repeat;
+}
+.sidebar ul li ul li a, .sidebar ul li ul li, .sidebar ul li ul li a:visited
+{
+	font:normal 13px/13px Georgia, "Times New Roman", Times, serif;
+	color:#000;
+}
+
+.sidebar ul li ul li a:hover
+{
+	color:#73794f;
+}
+.sidebar ul li input.search_input
+{
+	width:180px;
+	height:18px;
+	background:#e4ddc6;
+	border:1px solid #8d8c87;
+	vertical-align:middle;
+	font:normal 12px/100% "Trebuchet MS", Helvetica, sans-serif;
+	padding:1px 0 0 5px;
+	margin:0 5px 0 0;
+}
+
+.sidebar ul li input
+{
+	vertical-align:middle;
+}
+.sidebar ul li input.submit_search
+{
+	width:32px;
+	height:21px;
+	background:#667b8f;
+	border:1px solid #667b8f;
+	margin:0 0 0 0px;
+	padding:0;
+	font:bold 12px/100% "Trebuchet MS", Helvetica, sans-serif;
+	color:#fff;
+	text-transform:uppercase;
+	cursor:pointer;
+}
+form.sidebar_search
+{
+	width:232px;
+	padding:13px 18px;
+	display:block;
+
+}
+
+.footer
+{
+	width:100%;
+	height:55px;
+	background:url(../images/sharp_footer.gif) bottom left repeat-x;
+}
+.footer_left
+{
+	width:100%;
+	height:55px;
+	background:url(../images/sharp_left.gif) bottom left repeat-y;
+}
+.footer_right
+{
+	width:100%;
+	height:55px;
+	background:url(../images/sharp_right.gif) bottom right repeat-y;
+	position:relative;
+}
+
+.copy
+{
+	position:absolute;
+	top:10px;
+	left:30px;
+	font:normal 13px/12px Georgia, "Times New Roman", Times, serif;
+	color:#000;
+}
+.copy_support
+{
+	position:absolute;
+	top:10px;
+	right:30px;
+	font:normal 13px/12px Georgia, "Times New Roman", Times, serif;
+	color:#000;
+}
+
+.comments #contact  label
+{
+	float:left;
+	width:60px;
+	overflow:hidden;
+	font-size:12px;
+}
+
+.comments #contact input[type='text']
+{
+	width:200px;
+	height:18px;
+	background:#e4ddc6;
+	border:1px solid #8d8c87;
+	vertical-align:middle;
+	font:normal 12px/100% "Trebuchet MS", Helvetica, sans-serif;
+	padding:1px 0 0 5px;
+}
+
+.comments #contact textarea
+{
+	width:94%;
+	line-height:2.5;
+	background:#e4ddc6;
+	border:1px solid #8d8c87;
+}
+
+.comments #contact #contact_submit input.submit
+{
+	width:84px;
+	height:21px;
+	background:#667b8f;
+	border:1px solid #667b8f;
+	margin:0 0 0 0px;
+	padding:0;
+	font:bold 12px/100% "Trebuchet MS", Helvetica, sans-serif;
+	color:#fff;
+	text-transform:uppercase;
+	cursor:pointer;
+}
